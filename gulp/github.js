@@ -18,9 +18,10 @@ module.exports = function(options) {
 
   });
 
-  gulp.task('gh-deploy', [], function () {
+  gulp.task('gh-deploy', ['gh-prep'], function () {
 
     var options = { 
+      force: true,
       branch:  'gh-pages', 
       message: "v" + pack.version
     }
@@ -28,7 +29,7 @@ module.exports = function(options) {
     gulp.src('./dist/**/*')
     
       .pipe( debug() )
-      .pipe( gghp()  );
+      .pipe( gghp(options)  );
 
   });
 
