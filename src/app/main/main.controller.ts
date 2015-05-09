@@ -26,6 +26,12 @@ module amtg {
     constructor ($scope: IMainScope) {
       var awesomeThings = [
       {
+        'title': 'Firebase',
+        'url': 'https://www.firebase.com/',
+        'description': 'A powerful API to store and sync data in realtime.',
+        'logo': 'firebase.png'
+      },
+      {
         'title': 'Github Pages',
         'url': 'https://pages.github.com/',
         'description': 'Websites for you and your projects.',

@@ -81,7 +81,7 @@ module.exports = function(options) {
   });
 
   gulp.task('clean', ['tsd:purge'], function (done) {
-    $.del([options.dist + '/', options.tmp + '/'], done);
+    $.del([options.dist + '/', options.tmp + '/', '.public'], done);
   });
 
   gulp.task('build', ['html', 'fonts', 'other']);
