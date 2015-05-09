@@ -26,6 +26,12 @@ module amtg {
     constructor ($scope: IMainScope) {
       var awesomeThings = [
       {
+        'title': 'Github Pages',
+        'url': 'https://pages.github.com/',
+        'description': 'Websites for you and your projects.',
+        'logo': 'github.png'
+      },
+      {
         'title': 'AngularJS',
         'url': 'https://angularjs.org/',
         'description': 'HTML enhanced for web apps!',

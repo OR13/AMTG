@@ -1,7 +1,11 @@
-node_modules/
-bower_components/
 .sass-cache/
 .tmp/
-dist/
+.publish/
+
+node_modules/
+bower_components/
+
 typings/
 tsd.json
+
+dist/
