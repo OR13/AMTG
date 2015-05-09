@@ -12,7 +12,7 @@ module.exports = function(options) {
 
   gulp.task('gh-prep', [], function () {
 
-    gulp.src("./dist/index.html")
+    return gulp.src("./dist/index.html")
       .pipe( rename('404.html') )
       .pipe( gulp.dest('./dist') );
 
@@ -21,12 +21,11 @@ module.exports = function(options) {
   gulp.task('gh-deploy', ['gh-prep'], function () {
 
     var options = { 
-      force: true,
       branch:  'gh-pages', 
       message: "v" + pack.version
     }
 
-    gulp.src('./dist/**/*')
+    return gulp.src('./dist/**/*')
     
       .pipe( debug() )
       .pipe( gghp(options)  );
