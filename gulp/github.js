@@ -8,28 +8,22 @@ var rename  = require('gulp-rename');
 var pack    = require('../package.json')
 var $       = require('gulp-load-plugins')();
 
-module.exports = function(options) {
+function ghPrep () {
+  return gulp.src("./dist/index.html")
+    .pipe( rename('404.html') )
+    .pipe( gulp.dest('./dist') );
+}
 
-  gulp.task('gh-prep', [], function () {
+function ghDeploy () {
+  return gulp.src('./dist/**/*')
 
-    return gulp.src("./dist/index.html")
-      .pipe( rename('404.html') )
-      .pipe( gulp.dest('./dist') );
-
-  });
-
-  gulp.task('gh-deploy', ['gh-prep'], function () {
-
-    var options = { 
-      branch:  'gh-pages', 
+    .pipe( debug() )
+    .pipe( gghp({
+      branch:  'gh-pages',
       message: "v" + pack.version
-    }
+    })  );
 
-    return gulp.src('./dist/**/*')
-    
-      .pipe( debug() )
-      .pipe( gghp(options)  );
+}
 
-  });
-
-};
+gulp.task('gh-prep', ghPrep);
+gulp.task('gh-deploy', ['gh-prep'], ghDeploy);
