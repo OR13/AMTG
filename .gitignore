@@ -1,11 +1,8 @@
-.sass-cache/
-.tmp/
-.publish/
-
 node_modules/
 bower_components/
-
-typings/
-tsd.json
-
+coverage/
+.sass-cache/
+.idea/
+.tmp/
 dist/
+typings/
