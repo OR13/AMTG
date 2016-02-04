@@ -1,4 +1,4 @@
-### AMTG
+### Angular Material TypeScript Gulp Seed App
 
 #### Installation:
 
