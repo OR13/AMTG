@@ -27,3 +27,7 @@ I recommend you use an IDE with good support for TypeScript and Sass:
 
 [Atom](https://atom.io/)
 [Visual Studio Code](https://code.visualstudio.com/)
+
+
+This code is based of the most excellent: [Swiip generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular)
+
