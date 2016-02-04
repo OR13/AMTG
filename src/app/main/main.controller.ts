@@ -18,15 +18,13 @@ export class MainController {
   }
 
   /** @ngInject */
-  activate($timeout: angular.ITimeoutService) {
+  public activate = ($timeout: angular.ITimeoutService) => {
     this.getWebDevTec();
 
-    var self = this;
-
-    $timeout(function() {
-      self.classAnimation = 'rubberBand';
+    $timeout( () => {
+      this.classAnimation = 'rubberBand';
     }, 4000);
-  }
+  };
 
   showToastr() {
     this.toastr.info('Fork <a href="https://github.com/OR13/AMTG" target="_blank"><b>Angular Material TypeScript Gulp</b></a>');

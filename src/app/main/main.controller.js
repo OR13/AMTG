@@ -1,6 +1,13 @@
 "use strict";
 var MainController = (function () {
     function MainController($timeout, webDevTec, toastr) {
+        var _this = this;
+        this.activate = function ($timeout) {
+            _this.getWebDevTec();
+            $timeout(function () {
+                _this.classAnimation = 'rubberBand';
+            }, 4000);
+        };
         this.awesomeThings = new Array();
         this.webDevTec = webDevTec;
         this.classAnimation = '';
@@ -8,13 +15,6 @@ var MainController = (function () {
         this.toastr = toastr;
         this.activate($timeout);
     }
-    MainController.prototype.activate = function ($timeout) {
-        this.getWebDevTec();
-        var self = this;
-        $timeout(function () {
-            self.classAnimation = 'rubberBand';
-        }, 4000);
-    };
     MainController.prototype.showToastr = function () {
         this.toastr.info('Fork <a href="https://github.com/OR13/AMTG" target="_blank"><b>Angular Material TypeScript Gulp</b></a>');
         this.classAnimation = '';

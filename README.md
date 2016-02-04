@@ -21,3 +21,9 @@ Production build:
 Deploy production build to github pages:
 
 ``` gulp gh-deploy ```
+
+
+I recommend you use an IDE with good support for TypeScript and Sass:
+
+[Atom](https://atom.io/)
+[Visual Studio Code](https://code.visualstudio.com/)
