@@ -1,5 +1,7 @@
 ### Angular Material TypeScript Gulp Seed App
 
+[Slides](https://docs.google.com/presentation/d/1c2TA0afccSeynkcCXIGI65E-Ah1QeBDsMv2SCWGffHg/pub?start=false&loop=false&delayms=3000)
+
 #### Installation:
 
 ``` sudo npm install gulp tsd -g ```
@@ -31,4 +33,3 @@
 
 
 This code is based off the most excellent: [Swiip generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular)
-
