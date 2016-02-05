@@ -1,6 +1,6 @@
 ### Angular Material TypeScript Gulp Seed App
 
-[Slides](https://docs.google.com/presentation/d/1c2TA0afccSeynkcCXIGI65E-Ah1QeBDsMv2SCWGffHg/pub?start=false&loop=false&delayms=3000)
+#### [Presentation Slides](https://docs.google.com/presentation/d/1c2TA0afccSeynkcCXIGI65E-Ah1QeBDsMv2SCWGffHg/pub?start=false&loop=false&delayms=3000)
 
 #### Installation:
 
